@@ -9,7 +9,7 @@ from selenium.common.exceptions import NoSuchElementException
     for Jenkins when you push to your github repository.
 
     You need to fill in the following rows to get the program running correctly:
-    32, 48, 64, 109
+    31, 47, 63, 108
 '''
 
 
