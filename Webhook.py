@@ -9,7 +9,7 @@ from selenium.common.exceptions import NoSuchElementException
     for Jenkins when you push to your github repository.
 
     You need to fill in the following rows to get the program running correctly:
-    31, 44, 84
+    32, 48, 58, 102
 '''
 
 
@@ -29,7 +29,7 @@ class Webhook:
     ''' Fill in your desired github repository in the get method that you want to use '''
     def goto_github(self):
         bot = self.bot
-        bot.get('Github URL')
+        bot.get('Github URL') # Insert the URL to your Github repo
 
     def refresh_github(self):
         self.bot.refresh()
@@ -45,7 +45,7 @@ class Webhook:
 
     ''' Fill in your desired jenkins server URL in the get method that you want to use '''
     def login_jenkins(self):
-        self.j_bot.get('Jenkins Login URL')
+        self.j_bot.get('Jenkins Login URL') # Insert the URL to your Jenkins
         email = self.j_bot.find_element_by_id('j_username')
         password = self.j_bot.find_element_by_xpath("//input[@placeholder='Password']")
         email.clear()
